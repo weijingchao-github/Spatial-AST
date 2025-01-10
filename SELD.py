@@ -48,7 +48,7 @@ class SpatialAST:
             num_classes=355, drop_path_rate=0.1, num_cls_tokens=3
         )  # num of params (M): 85.96
         checkpoint = torch.load(
-            os.path.join(os.path.dirname(__file__), "weights/finetuned.pth"),
+            os.path.join(os.path.dirname(__file__), "weights/Spatial_AST_finetuned.pth"),
             map_location="cpu",
         )["model"]
         self.model.load_state_dict(checkpoint, strict=True)
