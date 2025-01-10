@@ -5,3 +5,4 @@ saved_checkpoints/
 *.npy
 *.txt
 ablations/
+*.wav
